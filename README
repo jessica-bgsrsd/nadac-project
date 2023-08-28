@@ -48,4 +48,4 @@ set ".\nadac_proj\" (caminho_onde_esta_a_pasta_scripts)
 -- Salvar e executar o bat
 
 OBS: essa automação gera um csv com os 100 medicamentos mais caros, mas caso queira mudar a quantidade, é só alterar o valor 
-dentro do bat.run, na variável "Qtde" (que como padrão tem 100)
+dentro do run.bat, na variável "Qtde" (que como padrão tem 100)
