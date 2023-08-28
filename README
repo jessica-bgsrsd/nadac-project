@@ -1,1 +1,51 @@
 Nadad Project
+-------------------------------------------------------------------------------------------------------------------------------
+Descrição: Automação que cria um banco de dados com informações de todos os medicamentos disponíveis na base do órgão regulador 
+(https://data.medicaid.gov/dataset/4a00010a-132b-4e4d-a611-543c9521280f) e gerar um arquivo .CSV com os 100 medicamentos mais 
+caros.
+-------------------------------------------------------------------------------------------------------------------------------
+Ferramentas utilizadas:
+--> Python 3.10.8
+
+--> Bibliotecas
+attrs==23.1.0
+certifi==2023.7.22
+cffi==1.15.1
+exceptiongroup==1.1.3
+h11==0.14.0
+idna==3.4
+numpy==1.23.4
+outcome==1.2.0
+pandas==1.5.0
+PyAutoIt==0.6.5
+pycparser==2.21
+PySocks==1.7.1
+python-dateutil==2.8.2
+pytz==2022.5
+selenium==4.11.2
+six==1.16.0
+sniffio==1.3.0
+sortedcontainers==2.4.0
+trio==0.22.2
+trio-websocket==0.10.3
+urllib3==2.0.4
+wsproto==1.2.0
+xlrd==2.0.1
+
+--> Webdriver para Google Chrome versão 116.0.5845.96 (Google Chrome versão 116.0.5845.111)
+Referencia: https://www.hashtagtreinamentos.com/automacao-web-no-python
+
+--> Banco SQLite
+-------------------------------------------------------------------------------------------------------------------------------
+Para executar os scripts:
+-- Abrir o bat run:
+.\nadac_proj\scripts\run.bat
+
+-- Modificar o caminho da pasta raiz (caso sua pasta raiz seja diferente da minha)
+cd ".\nadac_proj\" (caminho_onde_esta_a_pasta_scripts)
+set ".\nadac_proj\" (caminho_onde_esta_a_pasta_scripts)
+
+-- Salvar e executar o bat
+
+OBS: essa automação gera um csv com os 100 medicamentos mais caros, mas caso queira mudar a quantidade, é só alterar o valor 
+dentro do bat.run, na variável "Qtde" (que como padrão tem 100)
